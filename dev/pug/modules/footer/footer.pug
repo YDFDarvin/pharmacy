@@ -1,0 +1,64 @@
+mixin footerNavLink(link, text)
+    li.footer-nav__item
+        a(href=link).footer-nav__link=text
+
+footer.footer
+    .footer__main
+        .container
+            .footer__item
+                img(src="static/images/general/logo.svg" alt="logotype").footer__logo
+                a(href="tel:3801234567890").footer__phone (+380) 123 456 78 90
+                span.footer__description Працюємо щодня з 8:00 до 22:00
+
+            .footer__item
+                ul.footer-nav
+                    li.footer-nav__item
+                        span.footer-nav__top Про нас
+                    +footerNavLink('', 'Про магазин')
+                    +footerNavLink('', 'Як купити')
+                    +footerNavLink('', 'Оплата та доставка')
+                    +footerNavLink('', 'Гарантія')
+                    +footerNavLink('', 'Контакти')
+                    +footerNavLink('', 'Умови повернення')
+            .footer__item
+                ul.footer-nav
+                    li.footer-nav__item
+                        span.footer-nav__top Каталог товарів
+                    +footerNavLink('', 'БаДИ та вітаміни')
+                    +footerNavLink('', 'Дитяча продукція')
+                    +footerNavLink('', 'Косметика')
+                    +footerNavLink('', 'Ліки')
+                    +footerNavLink('', 'Оптика')
+                    +footerNavLink('', 'Засоби гігієни')
+            .footer__contacts
+                .footer__phones
+                    a(href="tel:3801234567890").footer__phone (+380) 123 456 78 90
+                    a(href="").btn Залишити вiдгук
+
+    .footer__socials
+        .container
+            ul.socials
+                li.socials__item
+                    a(href="").socials__link
+                    img(src="static/images/general/socials/instagram.svg" alt="icon instagram").socials__icon
+
+                li.socials__item
+                    a(href="").socials__link
+                    img(src="static/images/general/socials/facebook.svg" alt="icon facebook").socials__icon
+
+                li.socials__item
+                    a(href="").socials__link
+                    img(src="static/images/general/socials/twitter.svg" alt="icon twitter").socials__icon
+
+            ul.purchase
+                li.purchase__item
+                    a(href="").purchase__link
+                    img(src="static/images/general/purchases/visa.svg" alt="icon visa").purchase__icon
+                li.purchase__item
+                    a(href="").purchase__link
+                    img(src="static/images/general/purchases/paypal.svg" alt="icon paypal").purchase__icon
+
+    .footer__bottom
+        .container
+            span.text.copyright © Iнтернет Аптека YourDear Drugs, 2019
+            a(href="").footer__personal-data Полiтика обробки персональних данних

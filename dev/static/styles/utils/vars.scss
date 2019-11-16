@@ -1,0 +1,27 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+
+$rosewood: #43000f;
+$paco: #330D0D;
+$cream-brulee: #FFE999;
+$toledo: #180016;
+$alpine: #B39838;
+// Sizes
+$base-font-size: 14px;
+
+$breakpoints: (
+  "phone"       : 400px,
+  "phone-wide"  : 480px,
+  "phablet"     : 560px,
+  "tablet-small": 640px,
+  "tablet"      : 768px,
+  "tablet-wide" : 1024px,
+  "desktop"     : 1248px,
+  "desktop-wide": 1440px
+);
+
+$content-size: 1080px;
+
+// Fonts
+$main-font: 'Montserrat', Arial, sans-serif;

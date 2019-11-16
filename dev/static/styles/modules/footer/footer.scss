@@ -1,0 +1,155 @@
+footer {
+  flex: 0 0 auto;
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer{
+  &__main{
+    padding: 40px 0;
+    background-color: $cream-brulee;
+    .container {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+  &__description {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &__phone {
+    color: $toledo;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  &__logo {
+    height: 150px;
+    width: 150px;
+  }
+  &__item {
+    max-width: 200px;
+    display: flex;
+    margin-right: 130px;
+    &:last-child {
+      margin-right: 0;
+    }
+    flex-direction: column;
+    & > * {
+      margin: 15px 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__bottom {
+    background-color: $paco;
+    .text {
+      color: white;
+    }
+    padding: 20px 0;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__personal-data {
+    color: darkgrey;
+  }
+  &__socials {
+    padding-bottom: 30px;
+    background-color: $cream-brulee;
+    .container {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__purchase {
+    padding-bottom: 30px;
+    background-color: $cream-brulee;
+    .container {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &-nav {
+    &__item {
+
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &__link {
+      color: $toledo;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &__top {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}
+.purchase {
+  align-items: center;
+  display: flex;
+
+  &__item {
+    cursor: pointer;
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    align-items: center;
+    display: flex;
+    & > * {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__icon {
+    height: 50px;
+    width: 50px;
+  }
+}
+.socials {
+  align-items: center;
+  display: flex;
+  &__item {
+    cursor: pointer;
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    align-items: center;
+    display: flex;
+    & > * {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__text {
+    color: $toledo;
+  }
+  &__icon {
+    height: 25px;
+    width: 25px;
+  }
+}

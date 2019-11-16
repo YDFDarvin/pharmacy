@@ -1,0 +1,39 @@
+.btn {
+  background-color: $cream-brulee;
+  border: 1px solid $toledo;
+  border-radius: 2px;
+  color: $toledo;
+  cursor: pointer;
+  display: block;
+  line-height: 38px;
+  font-weight: 600;
+  height: 40px;
+  text-align: center;
+  padding: 0 10px;
+  transition: all linear .3s;
+  width: 100%;
+  &:hover {
+    background-color: $rosewood;
+    color: $cream-brulee;
+  }
+  &--border {
+      &-rosewood {
+        border-color: $rosewood;
+      }
+    }
+  &--color {
+      &-cream-brulee {
+        color: $cream-brulee;
+      }
+    }
+  &--transparent {
+      background-color: transparent;
+    }
+  &--round {
+      border-radius: 20px;
+    }
+  &--inline {
+    display: inline-block;
+    width: 200px;
+  }
+}
