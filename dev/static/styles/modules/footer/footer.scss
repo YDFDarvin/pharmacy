@@ -1,16 +1,19 @@
 footer {
+  margin-top: 50px;
   flex: 0 0 auto;
   .container {
     align-items: center;
     display: flex;
     justify-content: space-between;
   }
+
+  z-index: 999;
 }
 
 .footer{
   &__main{
     padding: 40px 0;
-    background-color: $cream-brulee;
+    background-color: $khaki;
     .container {
       display: flex;
       align-items: flex-start;
@@ -65,7 +68,7 @@ footer {
   }
   &__socials {
     padding-bottom: 30px;
-    background-color: $cream-brulee;
+    background-color: $khaki;
     .container {
       display: flex;
       align-items: center;
@@ -73,7 +76,7 @@ footer {
   }
   &__purchase {
     padding-bottom: 30px;
-    background-color: $cream-brulee;
+    background-color: $khaki;
     .container {
       display: flex;
       align-items: center;

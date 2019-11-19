@@ -1,0 +1,97 @@
+.product-prev {
+  position: relative;
+  margin: 10px 15px 30px;
+  padding: 190px 20px 20px 20px;
+  width: 270px;
+  outline: none;
+  height: 440px;
+  border: 1px solid $khaki;
+  border-radius: 7px;
+  transition: all linear .3s;
+  &:hover {
+    background-color: $khaki;
+    .btn {
+      background-color: $khaki;
+      &:hover {
+        background-color: $rosewood;
+      }
+    }
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1)
+    , 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  }
+  &__header {
+    left: 20px;
+    right: 20px;
+    height: 160px;
+    position: absolute;
+    top: 20px;
+  }
+  &__img {
+    @include size(190px);
+    max-width: 100%;
+    outline: none;
+    padding-bottom: 20px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+  }
+  &__body {
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 90px;
+  }
+  &__title {
+    font-weight: 600;
+    line-height: 1.43;
+  }
+  &__price {
+    margin-bottom: 20px;
+    align-items: baseline;
+    justify-content: center;
+    display: flex;
+    & > * {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &-current {
+      font-size: 20px;
+      font-weight: 600;
+      color: rgba($red, 0.57);
+    }
+    &-old {
+      font-size: 13px;
+      text-decoration: line-through;
+      color: $silver-sand;
+    }
+  }
+  &__colors {
+    .slick-dots {
+      display: flex;
+      li {
+        border: 1px solid transparent;
+        border-radius: 2px;
+        padding: 2px;
+        &.slick-active {
+          border-color: $rosewood;
+        }
+      }
+    }
+  }
+  &__color {
+    outline: none;
+    display: block;
+    border-radius: 2px;
+    @include size(20px);
+  }
+  &__footer {
+    display: flex;
+    justify-content: center;
+  }
+}

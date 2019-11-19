@@ -1,0 +1,44 @@
+section.s-information.s-light-bg
+    .container
+        .information
+            .information-item
+                .information-item__header
+                    h2.title-section Новини
+                .information-item__body
+                    .news-prev__wrapper
+                        a(href="").news-prev
+                            .news-prev__img(style="background-image:url('static/images/content/news/first-new.jpg')")
+                            .new-prev__body
+                                span.news-prev__title CVS Health, UPS здійснюють перші постачання бездротових безпілотників за рецептами
+                                span.news-prev__description Компанія CVS розпочала доставку рецептів безпілотників за допомогою UPS Flight Forward з аптеки CVS у Північній Кароліні.
+                        a(href="").news-prev
+                            .news-prev__img(style="background-image:url('static/images/content/news/first-new.jpg')")
+                            .new-prev__body
+                                span.news-prev__title CVS Health, UPS здійснюють перші постачання бездротових безпілотників за рецептами
+                                span.news-prev__description Компанія CVS розпочала доставку рецептів безпілотників за допомогою UPS Flight Forward з аптеки CVS у Північній Кароліні.
+                .information-item__footer
+                    a(href="").information-item__link Всi новини
+            .information__item
+                .information-item__header
+                    h2.title-section Відгуки
+                .information-item__body
+                    .review-prev
+                        p.review-prev__text Неймовiрний сервiс, як i товар.
+                        span.review-prev__author YourDear
+                .information-item__footer
+                    a(href="").information-item__link Всi вiдгуки
+            .information__item
+                .information-item__header
+                    h2.title-section Партнеры
+                .information-item__body
+                    .collaborators-wraper
+                        ul.collaborators__list
+                            each collaborator in [{img:'google',name:'Google'},{img:'tesla',name:'Tesla'},{img:'spacex',name:'SpaceX'},{img:'batman',name:'Batman'},{img:'amazon',name:'Amazon'},{img:'mitsubishi',name:'Mitsubishi'}]
+                                li.collaborator__item
+                                    a(href="").collaborator
+                                        img(src=`static/images/content/partners/${collaborator.img}.svg`).collaborator__img
+                                        span.collaborator__text=collaborator.name
+                .information-item__footer
+                    a(href="").information-item__link Всi партнери
+                    span.information-item__count (6)
+

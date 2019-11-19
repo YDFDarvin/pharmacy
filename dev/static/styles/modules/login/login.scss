@@ -1,0 +1,127 @@
+.login {
+  &-title {
+    &__text {
+      font-weight: 700;
+      color: $toledo;
+      font-size: 24px;
+    }
+
+    margin: 30px 0;
+  }
+  &-form {
+    &__text {
+      color: $toledo;
+      font-size: 14px;
+      margin: 10px 0;
+
+      &.login-form__text--semibold {
+        font-weight: 600;
+      }
+    }
+
+    &-checkbox {
+      align-items: center;
+      display: flex;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &__checkbox {
+        margin: 10px;
+        margin-left: 1px;
+
+        *, *:after, *:before {
+          box-sizing: border-box;
+        }
+
+        body {
+          background: whitesmoke;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 16px;
+        }
+
+        input#check {
+          position: absolute;
+          opacity: 0;
+
+          &:checked + label svg path {
+            stroke-dashoffset: 0;
+          }
+
+          &:focus + label {
+            transform: scale(1.03);
+          }
+        }
+
+        #check + label {
+          display: block;
+          border: 1px solid #333;
+          width: var(--d);
+          height: var(--d);
+          border-radius: 2px;
+          cursor: pointer;
+          transition: all .2s ease;
+
+          &:active {
+            transform: scale(1.05);
+            border-radius: 15px;
+          }
+
+          svg {
+            pointer-events: none;
+
+            path {
+              fill: none;
+              stroke: #333;
+              stroke-width: 4px;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-dasharray: 100;
+              stroke-dashoffset: 101;
+              transition: all 350ms cubic-bezier(1, 0, .37, .91);
+            }
+          }
+        }
+
+      }
+    }
+
+    &-login {
+      border: none;
+      padding: 5px 0;
+      border-bottom: 1px solid $buddha-gold;
+      border-top: 1px solid $buddha-gold;
+
+      &__input {
+        background-color: transparent;
+        border: 1px solid $khaki;
+        color: $toledo;
+        width: 500px;
+        border-radius: 2px 0 0 2px;
+        padding: 0 20px 0 20px;
+        line-height: 48px;
+        height: 50px;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+        font-size: 16px;
+
+        &-wrapper {
+          flex: 1;
+          position: relative;
+        }
+      }
+    }
+  }
+  &-help {
+    margin: 10px 0;
+    &__link {
+      color: $rosewood;
+      &:hover {
+        color: $buddha-gold;
+      }
+    }
+  }
+}

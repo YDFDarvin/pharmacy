@@ -4,6 +4,7 @@
 @import "utils/fonts";
 
 html {
+  scroll-behavior: smooth;
   color: $toledo;
   background-color: $cream-brulee;
   font-size: $base-font-size;

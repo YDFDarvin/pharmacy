@@ -1,9 +1,14 @@
 .header__main
     .container
         .header__content
-            .header__logo.logo
-                img(src="static/images/general/logo.svg"
-                    alt="logotype").logo__img
+            if(pageClass === "index-page")
+                .header__logo.logo
+                    img(src="static/images/general/logo.svg"
+                        alt="logotype").logo__img
+            else
+                a(href="index.html").header__logo.logo
+                    img(src="static/images/general/logo.svg"
+                        alt="logotype").logo__img
             .header__phones
                 .header__item
                     a(href="tel:3801234567890").header__phone (+380) 123 456 78 90
@@ -16,7 +21,7 @@
                 span.header-address__text вул. Пушкiна, буд. Калатушкниа
             .header__shop
                 .header-goods
-                    span.header-goods__price 0 &#8362;
+                    span.header-goods__price 0 $
                     span.header-goods__count 0 товарiв
                 .header-basket
                     +icon('basket', 'header-basket__icon')

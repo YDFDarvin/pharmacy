@@ -1,6 +1,6 @@
 .search {
   position: relative;
-  z-index: 1;
+  z-index: 999999;
   &.search--open {
     .search__body {
       display: block;

@@ -1,0 +1,24 @@
+.hits {
+  &__body {
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  &-navigation {
+    align-items: center;
+    display: flex;
+    &__item {
+      flex: 1;
+      height: 50px;
+      border-bottom: 2px solid $khaki;
+      line-height: 48px;
+      text-align: center;
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.tabs-navigation__item--active {
+        border-bottom-color: $rosewood;
+      }
+    }
+  }
+}

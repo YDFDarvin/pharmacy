@@ -1,0 +1,14 @@
+.title {
+  &-page {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: $toledo;
+  }
+  &-section {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.67;
+    margin: 20px 0;
+  }
+}

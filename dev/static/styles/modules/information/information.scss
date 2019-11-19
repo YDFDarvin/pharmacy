@@ -1,0 +1,39 @@
+@import "news";
+@import "review";
+@import "collaborator";
+
+.information {
+  margin-top: 40px;
+  display: flex;
+  padding: 20px;
+  & > * {
+    padding-right: 30px;
+    &:last-child {
+      padding-right: 0;
+    }
+    flex: 1;
+  }
+  &__footer {
+    display: flex;
+    & > * {
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &-item {
+    &__body {
+      height: 420px;
+    }
+    &__link {
+      display: inline-block;
+
+      color: $rosewood;
+      border-bottom: 1px solid rgba(38,38,38,0.15);
+    }
+  }
+  &__count {
+    color: $silver-sand;
+  }
+}

@@ -1,3 +1,7 @@
+mixin headerNavLink(link, text)
+    li.header-nav__item
+        a(href=link).header-nav__link= text
+
 .header__top
     .container
         .header__content
@@ -6,8 +10,8 @@
                     + headerNavLink('', 'Оплата та доставка')
                     + headerNavLink('', 'Гарантія та якість')
                     + headerNavLink('', 'Контакти')
-                    + headerNavLink('', 'Про нас')
+                    + headerNavLink('about.html', 'Про нас')
             nav.header__nav.header__nar--right.header-nav
                 ul.header-nav__list
-                    + headerNavLink('', 'Вхід')
+                    + headerNavLink('login.html', 'Вхід')
                     + headerNavLink('', 'Реєстрація')

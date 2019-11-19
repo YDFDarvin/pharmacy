@@ -1,0 +1,30 @@
+.loging
+    .container
+        .login__content
+            .login-title
+                .login-title__text Будь-ласка, увiйдiть!
+            .login-form
+                .login-form-wrapper
+                    form.login-form-login
+                        .login-form-login-wrapper
+                            h5.login-form__text.login-form__text--semibold Логiн:
+                            input(type="email" placeholder="youremail@gmail.com").login-form-login__input
+                        .login-form-password-wrapper
+                            h5.login-form__text.login-form__text--semibold Пароль:
+                            input(type="password").login-form-login__input
+                        .login-form-checkbox-wrapper
+                            .login-form-checkbox
+                                .login-form-checkbox__checkbox
+                                    - let d = 23;
+                                    .form
+                                        input(type="checkbox", id="check")
+                                        label(for="check", style='--d: ' + d + 'px')
+                                            svg(viewBox=[0, 0, 50, 50].join())
+                                                path(d="M5 30 L 20 45 L 45 5")
+                                .login-form__text.login-form__text--left.login-form__text--thin Запам'ятати мене на цьому комп'ютерi
+                        .login-form-button-wrapper
+                            input(type="submit" value="Увiйти").login-form__button.btn.btn--transparent.btn--inline
+            .login-help
+                a(href="").login-help__link.login-help__link--padding Забули свiй пароль?
+                p.login-help__text  Якщо ви вперше на сайте, заповнiть, будь ласка, реєстраційну форму.
+                a(href="").login-help__link Зареєструватися
